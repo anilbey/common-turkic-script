@@ -27,7 +27,7 @@ _Zero-dependency transliterator from Qazaq (kk) and Qırğız (ky) Cyrillic to t
 
 > Bul README-diñ qazaqşa böligi tutasımen 34 tamgalı **Ortaq Türk Jazuwında** jazılğan — demek buwma öziniñ şığısımen jazılğan.
 
-`common-turkic-script` — Qazaq (`kk`) pen Qırğız (`ky`) kiril jazbasın bekitilgen 34 tamgalı **Ortaq Türk Jazuwına** (Türk Akademiyası + TDK, Baku 2024) awdaratın arıw, täweldiliksiz TypeScript buwması.
+`common-turkic-script` — Qazaq (`kk`) pen Qırğız (`ky`) kiril jazbasın bekitilgen 34 tamgalı **Ortaq Türk Jazuwına** (Baku 2024 · [Astana 2026](https://turkicacademy.org/en/novost-akademii/declaration-fourth-meeting-commission-common-turkic-alphabet#post)) awdaratın arıw, täweldiliksiz TypeScript buwması.
 
 ### Erekşelikter
 
@@ -87,7 +87,7 @@ toLatin("Абай Құнанбайұлы"); // "Abay Qūnanbayūlı"
 
 ## English
 
-`common-turkic-script` is a pure, zero-dependency TypeScript package that transliterates **Qazaq (`kk`)** and **Qırğız (`ky`)** Cyrillic text into the official 34-letter **Common Turkic Alphabet** (_Ortaq Türk Älipbesi_; Turkic Academy + TDK, Baku 2024).
+`common-turkic-script` is a pure, zero-dependency TypeScript package that transliterates **Qazaq (`kk`)** and **Qırğız (`ky`)** Cyrillic text into the official 34-letter **Common Turkic Alphabet** (_Ortaq Türk Jazuwı_; Baku 2024 · [Astana 2026 Declaration](https://turkicacademy.org/en/novost-akademii/declaration-fourth-meeting-commission-common-turkic-alphabet#post)).
 
 ### Features
 
@@ -187,11 +187,7 @@ npx common-turkic-script --lang kk input.txt > output.txt
 
 ### Source & standard
 
-The mapping follows the official 34-letter Common Turkic Alphabet agreed by the
-Turkic World Common Alphabet Commission (Turkic Academy + TDK) in Baku,
-September 2024, and Kazakhstan's 2021 official Latin table.
-
-The 34 letters: `A Ä B C Ç D E F G Ğ H I İ J K L M N Ñ O Ö P Q R S Ş T U Ū Ü V X Y Z`.
+34-letter Common Turkic Alphabet (Baku 2024 · [Astana 2026 Declaration](https://turkicacademy.org/en/novost-akademii/declaration-fourth-meeting-commission-common-turkic-alphabet#post)). Letters: `A Ä B C Ç D E F G Ğ H I İ J K L M N Ñ O Ö P Q R S Ş T U Ū Ü V X Y Z`.
 
 ### Contributing
 
