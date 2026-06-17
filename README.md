@@ -2,7 +2,7 @@
 
 # common-turkic-script
 
-**Qazaq (kk) jäne Qırğız (ky) kirilını resmi 34 tamgalı Ortaq Türk Jazuwına awdaratın, täweldiliksiz awdarğış.**
+**Qazaq (kk) pen Qırğız (ky) kirilın bekitilgen 34 tamgalı Ortaq Türk Jazuwına awdaratın, täweldiliksiz awdarğış.**
 
 _Zero-dependency transliterator from Qazaq (kk) and Qırğız (ky) Cyrillic to the official 34-letter Common Turkic Alphabet._
 
@@ -25,18 +25,18 @@ _Zero-dependency transliterator from Qazaq (kk) and Qırğız (ky) Cyrillic to t
 
 ## Qazaqşa
 
-> Bul README-diñ qazaqşa böligi tutasımen 34 tamgalı **Ortaq Türk Jazuwında** jazılğan — yağni paket öziniñ şığısımen jazılğan.
+> Bul README-diñ qazaqşa böligi tutasımen 34 tamgalı **Ortaq Türk Jazuwında** jazılğan — demek buwma öziniñ şığısımen jazılğan.
 
-`common-turkic-script` — Qazaq (`kk`) jäne Qırğız (`ky`) kiril mätinin resmi 34 tamgalı **Ortaq Türk Jazuwına** (Türk Akademiyası + TDK, Baku 2024) awdaratın saf, täweldiliksiz TypeScript paketi.
+`common-turkic-script` — Qazaq (`kk`) pen Qırğız (`ky`) kiril jazbasın bekitilgen 34 tamgalı **Ortaq Türk Jazuwına** (Türk Akademiyası + TDK, Baku 2024) awdaratın arıw, täweldiliksiz TypeScript buwması.
 
 ### Erekşelikter
 
-- **Saf funksiya**, eş täweldilik joq; brauzerde de, Node-ta da jumıs isteydi.
-- **TypeScript tipteri qosılğan** (`.d.ts`), ESM + CJS qoldaw.
+- **Arıw atqarım**, eş täweldilik joq; şolğışta da, Node-ta da jumıs isteydi.
+- **TypeScript türleri qosılğan** (`.d.ts`), ESM + CJS qoldaw.
 - **Bas/kişi tamga saqtaladı** (`Ұ`→`Ū`, `Я`→`Ya`/`YA`).
-- **Idempotent**: bir ret awdarılğan ortaq jazuw mätini qaytadan awdarılğanda özgermeydi.
+- **Idempotent**: bir kez awdarılğan ortaq jazuw jazbası qaytadan awdarılğanda özgermeydi.
 - **Tree-shakeable**, minzip ölşemi öte kişi.
-- **CLI** qosılğan: terminalda tikeley qoldanu.
+- **CLI** qosılğan: buyrıq jolında tikeley qoldanu.
 
 ### Ornatuv
 
@@ -44,7 +44,7 @@ _Zero-dependency transliterator from Qazaq (kk) and Qırğız (ky) Cyrillic to t
 npm install common-turkic-script
 ```
 
-### Tez bastaw
+### Jıldam bastaw
 
 ```ts
 import { transliterate, createTransliterator } from "common-turkic-script";
@@ -52,29 +52,29 @@ import { transliterate, createTransliterator } from "common-turkic-script";
 transliterate("Қазақстан", "kk"); // "Qazaqstan"
 transliterate("Жалпы", "ky");      // "Calpı"
 
-// Bir tilge baylanğan qaytımdı funksiya:
+// Bir tilge baylanğan qaytımdı atqarım:
 const toLatin = createTransliterator("kk");
 toLatin("Абай Құнанбайұлы"); // "Abay Qūnanbayūlı"
 ```
 
 ### API
 
-| Funksiya | Sipattama |
+| Atqarım | Tüsindirme |
 | --- | --- |
-| `transliterate(text, lang)` | Mätindi awdaradı. `lang`: `"kk"`, `"ky"` nemese `{ lang }`. |
-| `transliterateLines(lines, lang)` | Joldar massivin tolığımen awdaradı. |
-| `createTransliterator(lang)` | Bir tilge baylanğan `(text) => string` funksiyasın qaytaradı. |
-| `getSupportedLangs()` | Qoldaw körsetilgen til kodtarın qaytaradı. |
-| `langProfiles` | Här tildiñ metaderegi men kestesi. |
-| `COMMON_TURKIC_34` | 34 tamgadan turatın massiv. |
+| `transliterate(text, lang)` | Jazbanı awdaradı. `lang`: `"kk"`, `"ky"` nemese `{ lang }`. |
+| `transliterateLines(lines, lang)` | Joldar tizbesin tolığımen awdaradı. |
+| `createTransliterator(lang)` | Bir tilge baylanğan `(text) => string` atqarımın qaytaradı. |
+| `getSupportedLangs()` | Qoldaw körsetilgen til belgilerin qaytaradı. |
+| `langProfiles` | Barlıq tildiñ derekteri men sızbası. |
+| `COMMON_TURKIC_34` | 34 tamgadan turatın tizbe. |
 
-### Resmi keste eskertpeleri
+### Bekitilgen sızba eskertpeleri
 
 | Kiril | kk | ky | Eskertpe |
 | --- | --- | --- | --- |
-| ұ | ū | — | makron; `у`→`u`-dan bölek (eñ mañızdı ayırma) |
-| ы | ı | ı | noqatsız I |
-| і / и | i | i | noqatlı İ |
+| ұ | ū | — | üst sızıq; `у`→`u`-dan bölek (eñ mañızdı ayırma) |
+| ы | ı | ı | üsti belgisiz I |
+| і / и | i | i | üsti belgili İ |
 | й | y | y | |
 | ж | j | **c** | Qazaq [ʒ]→j, Qırğız [d͡ʒ]→c |
 | ч | ç | ç | |
