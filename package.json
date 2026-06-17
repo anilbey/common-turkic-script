@@ -1,0 +1,74 @@
+{
+  "name": "common-turkic-script",
+  "version": "0.1.0",
+  "description": "Zero-dependency transliterator from Qazaq (kk) and Qırğız (ky) Cyrillic to the official 34-letter Common Turkic Alphabet (Ortaq Türk Älipbesi).",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "common-turkic-script": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run lint && npm run build && npm run test"
+  },
+  "keywords": [
+    "turkic",
+    "common-turkic-alphabet",
+    "ortaq-turk-alipbesi",
+    "transliteration",
+    "transliterate",
+    "cyrillic",
+    "latin",
+    "kazakh",
+    "qazaq",
+    "kyrgyz",
+    "kirghiz",
+    "romanization",
+    "i18n",
+    "unicode"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/common-turkic-script.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OWNER/common-turkic-script/issues"
+  },
+  "homepage": "https://github.com/OWNER/common-turkic-script#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
