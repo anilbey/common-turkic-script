@@ -52,12 +52,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OWNER/common-turkic-script.git"
+    "url": "git+https://github.com/anilbey/common-turkic-script.git"
   },
   "bugs": {
-    "url": "https://github.com/OWNER/common-turkic-script/issues"
+    "url": "https://github.com/anilbey/common-turkic-script/issues"
   },
-  "homepage": "https://github.com/OWNER/common-turkic-script#readme",
+  "homepage": "https://github.com/anilbey/common-turkic-script#readme",
   "engines": {
     "node": ">=18"
   },

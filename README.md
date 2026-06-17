@@ -8,7 +8,7 @@ _Zero-dependency transliterator from Qazaq (kk) and Qırğız (ky) Cyrillic to t
 
 [![npm version](https://img.shields.io/npm/v/common-turkic-script.svg?logo=npm)](https://www.npmjs.com/package/common-turkic-script)
 [![npm downloads](https://img.shields.io/npm/dm/common-turkic-script.svg)](https://www.npmjs.com/package/common-turkic-script)
-[![CI](https://github.com/OWNER/common-turkic-script/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/common-turkic-script/actions/workflows/ci.yml)
+[![CI](https://github.com/anilbey/common-turkic-script/actions/workflows/ci.yml/badge.svg)](https://github.com/anilbey/common-turkic-script/actions/workflows/ci.yml)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/common-turkic-script)](https://bundlephobia.com/package/common-turkic-script)
 [![types included](https://img.shields.io/npm/types/common-turkic-script.svg?logo=typescript)](https://www.typescriptlang.org/)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](https://www.npmjs.com/package/common-turkic-script?activeTab=dependencies)

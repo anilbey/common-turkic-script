@@ -21,5 +21,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CLI (`common-turkic-script`) supporting inline text, stdin, and files.
 - ESM + CJS builds with bundled TypeScript declarations.
 
-[Unreleased]: https://github.com/OWNER/common-turkic-script/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/OWNER/common-turkic-script/releases/tag/v0.1.0
+[Unreleased]: https://github.com/anilbey/common-turkic-script/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/anilbey/common-turkic-script/releases/tag/v0.1.0
